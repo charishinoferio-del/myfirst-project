@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+
+<style>
+  body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    background-color: black;
+  }
+
+
+  header {
+    background: maroon;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    animation: fadeInDown 4s ease;
+  }
+
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  header h1 {
+    font-size: 40px;
+    margin: 0;
+    animation: popIn 2s ease;
+  }
+
+  @keyframes popIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  nav {
+    background: #333;
+    overflow: hidden;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  section {
+    padding: 40px;
+    background: white;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    text-align: center;
+    color: maroon;
+    animation: fadeInUp 1.5s ease;
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+
+  #home p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .edu-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .edu-item {
+    width: 250px;
+    margin: 20px;
+  }
+
+  .edu-item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-behavior: smooth;
+  }
+
+  .scroll-container img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .about-images {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .about-images img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 10px;
+    background: maroon;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background: maroon;
+  }
+
+  footer {
+    text-align: center;
+    background: maroon;
+    color: white;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>My Website</h1>
+  <p>Welcome to My Simple Website!</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#education">Education</a>
+  <a href="#certificates">Certificates</a>
+  <a href="#about">About</a>
+  <a href="#works">Works</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h2>Home</h2>
+  <p>Hello! I’m Charish Inoferio, and welcome to my simple and personal webpage. Here, you’ll see my educational background, achievements, works, and contact details. Let’s explore my simple website!</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="edu-container">
+    <div class="edu-item">
+      <img src="qres.jpg
+      " alt="School 1">
+      <p><b>Queen Row Elementary School</b></p>
+    </div>
+    <div class="edu-item">
+      <img src="cbnhs.jpg" alt="School 2">
+      <p><b>City of Bacoor National High School - Springville</b></p>
+    </div>
+    <div class="edu-item">
+      <img src="images.png" alt="School 3">
+      <p><b>SHS San Nicholas III</b></p>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <h2>Certificates</h2>
+  <p>Here are some of my achievements and certificates:</p>
+  <div class="scroll-container">
+    <img src="G11 SDRRM.jpg" alt="SDRRM">
+    <img src="G9 HONOR.jpg" alt="G9 HONOR">
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I'm a passionate learner and creator who loves technology, design, and self-improvement. I believe in learning by doing and sharing knowledge to inspire others.</p>
+  <div class="about-images">
+    <img src="5 YEARSOLD.jpeg" alt="5 YEARS OLD">
+    <img src="kinder.jpeg" alt="KINDER GRADUATION">
+    <img src="3 sibling.jpeg" alt="WITH MY 3 SIBLINGS">
+    <img src="PRE_SCHOOL.jpeg" alt="PRE-SCHOOL GRADUATION">
+    <img src="BESTIYY.jpg" alt="WITH KLOWI">
+  </div>
+</section>
+
+<section id="works">
+  <h2>My Works</h2>
+  <p>Some of my completed projects and designs:</p>
+  <div class="scroll-container">
+    <img src="shedule.jpg" alt="SSCHEDULE">
+    <img src="RESUME.jpg" alt="RESUME">
+    <img src="BORDER.jpg" alt="BORDER">
+    <img src="PETER PAN.jpg" alt="PETER PAN">
+    <img src="PLACE ORDER.jpg" alt="PLACE ORDER">
+    <img src="QUOTATION.jpg" alt="QUOTATION">
+  </div>
+</section>
+
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="email" placeholder="Enter your email" required>
+    <textarea placeholder="Your message" rows="4" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <br>
+  <div style="text-align:center;">
+    <p><b>Contact No:</b> 0916-196-5057</p>
+    <p><b>Email:</b> inoferiocharish@gmail.com</p>
+    <p><b>Facebook:</b> fb.com/Charish Inoferio</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 My Website | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
